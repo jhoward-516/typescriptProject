@@ -1,3 +1,5 @@
+
+
 import * as express from 'express';
 import {Application} from "express";
 import {initRestApi} from "./api/api";
@@ -13,7 +15,11 @@ initRestApi(app);
 
 app.use(apiErrorHandler);
 
+
+
 app.listen(8090, () => {
-    console.log('Server is now running on port 8090...')
+    console.log('Server is now running on port 8090 ...');
 });
+
+
 
